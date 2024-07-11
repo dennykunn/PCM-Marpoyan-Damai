@@ -11,11 +11,6 @@
         * {
             scroll-behavior: smooth;
         }
-
-        .grid-item {
-            width: 300px;
-            border: 2px solid white;
-        }
     </style>
 </head>
 
@@ -195,8 +190,8 @@
                     </div>
 
                     <div class="text-center mt-4 text-slate-900">
-                        <p class="text-lg font-medium">Ketua</p>
-                        <p class="font-bold text-2xl">Muhammad Suaidi, SHI</p>
+                        <p class="textlg:-lg font-medium">Ketua</p>
+                        <p class="font-bold lg:text-2xl text-xl">Muhammad Suaidi, SHI</p>
                     </div>
                 </div>
                 <div class="col-span-1">
@@ -206,8 +201,8 @@
                     </div>
 
                     <div class="text-center mt-4 text-slate-900">
-                        <p class="text-lg font-medium">Sekretaris</p>
-                        <p class="font-bold text-2xl">Jasman Chan, SE, MSi</p>
+                        <p class="lg:text-lg font-medium">Sekretaris</p>
+                        <p class="font-bold lg:text-2xl text-xl">Jasman Chan, SE, MSi</p>
                     </div>
                 </div>
                 <div class="col-span-1">
@@ -217,8 +212,8 @@
                     </div>
 
                     <div class="text-center mt-4 text-slate-900">
-                        <p class="text-lg font-medium">Bendahara</p>
-                        <p class="font-bold text-2xl">H. Zulkifli Harun</p>
+                        <p class="lg:text-lg font-medium">Bendahara</p>
+                        <p class="font-bold lg:text-2xl text-xl">H. Zulkifli Harun</p>
                     </div>
                 </div>
                 <div class="col-span-1">
@@ -228,8 +223,8 @@
                     </div>
 
                     <div class="text-center mt-4 text-slate-900">
-                        <p class="text-lg font-medium">Wakil Ketua</p>
-                        <p class="font-bold text-2xl">Drs. H. Darwis Idris</p>
+                        <p class="lg:text-lg font-medium">Wakil Ketua</p>
+                        <p class="font-bold lg:text-2xl text-xl">Drs. H. Darwis Idris</p>
                     </div>
                 </div>
                 <div class="col-span-1">
@@ -239,8 +234,8 @@
                     </div>
 
                     <div class="text-center mt-4 text-slate-900">
-                        <p class="text-lg font-medium">Wakil Ketua</p>
-                        <p class="font-bold text-2xl">H. Sutan Sjahrir</p>
+                        <p class="lg:text-lg font-medium">Wakil Ketua</p>
+                        <p class="font-bold lg:text-2xl text-xl">H. Sutan Sjahrir</p>
                     </div>
                 </div>
                 <div class="col-span-1">
@@ -250,8 +245,8 @@
                     </div>
 
                     <div class="text-center mt-4 text-slate-900">
-                        <p class="text-lg font-medium">Wakil Ketua</p>
-                        <p class="font-bold text-2xl">Amril Surin</p>
+                        <p class="lg:text-lg font-medium">Wakil Ketua</p>
+                        <p class="font-bold lg:text-2xl text-xl">Amril Surin</p>
                     </div>
                 </div>
                 <div class="col-span-1">
@@ -261,8 +256,8 @@
                     </div>
 
                     <div class="text-center mt-4 text-slate-900">
-                        <p class="text-lg font-medium">Wakil Ketua</p>
-                        <p class="font-bold text-2xl">M. Faisal, S.Pd</p>
+                        <p class="lg:text-lg font-medium">Wakil Ketua</p>
+                        <p class="font-bold lg:text-2xl text-xl">M. Faisal, S.Pd</p>
                     </div>
                 </div>
                 <div class="col-span-1">
@@ -272,8 +267,8 @@
                     </div>
 
                     <div class="text-center mt-4 text-slate-900">
-                        <p class="text-lg font-medium">Wakil Sekretaris</p>
-                        <p class="font-bold text-2xl">Amsal Siregar, MPd</p>
+                        <p class="lg:text-lg font-medium">Wakil Sekretaris</p>
+                        <p class="font-bold lg:text-2xl text-xl">Amsal Siregar, MPd</p>
                     </div>
                 </div>
                 <div class="col-span-1">
@@ -283,53 +278,61 @@
                     </div>
 
                     <div class="text-center mt-4 text-slate-900">
-                        <p class="text-lg font-medium">Wakil Sekretaris</p>
-                        <p class="font-bold text-2xl">Amsal Siregar, MPd</p>
+                        <p class="lg:text-lg font-medium">Wakil Sekretaris</p>
+                        <p class="font-bold lg:text-2xl text-xl">Amsal Siregar, MPd</p>
                     </div>
                 </div>
             </div>
         </div>
         <div id="galeri" class="container px-4 mx-auto md:py-16 py-8 scroll-mt-12">
             <h1 class="text-center lg:text-4xl text-2xl font-bold text-slate-900 mb-8">Galeri</h1>
-            <div class="grid-masonry">
-                <div class="grid-item">
+            <div class="lightGallery grid md:grid-cols-4 xs:grid-cols-3 grid-cols-2">
+                <div class="col-span-1">
                     <a href="/images/galeri-1.jpg" data-sub-html="<h4>Caption for image 1</h4>">
-                        <img src="/images/galeri-1.jpg" alt="galeri-1.jpg">
+                        <img src="/images/galeri-1.jpg" class="h-[200px] w-full object-cover border-2 border-white"
+                            alt="galeri-1.jpg">
                     </a>
                 </div>
-                <div class="grid-item">
+                <div class="col-span-1">
                     <a href="/images/galeri-2.jpg" data-sub-html="<h4>Caption for image 2</h4>">
-                        <img src="/images/galeri-2.jpg" alt="galeri-2.jpg">
+                        <img src="/images/galeri-2.jpg" class="h-[200px] w-full object-cover border-2 border-white"
+                            alt="galeri-2.jpg">
                     </a>
                 </div>
-                <div class="grid-item">
+                <div class="col-span-1">
                     <a href="/images/galeri-3.jpg" data-sub-html="<h4>Caption for image 3</h4>">
-                        <img src="/images/galeri-3.jpg" alt="galeri-3.jpg">
+                        <img src="/images/galeri-3.jpg" class="h-[200px] w-full object-cover border-2 border-white"
+                            alt="galeri-3.jpg">
                     </a>
                 </div>
-                <div class="grid-item">
+                <div class="col-span-1">
                     <a href="/images/galeri-4.jpg" data-sub-html="<h4>Caption for image 4</h4>">
-                        <img src="/images/galeri-4.jpg" alt="galeri-4.jpg">
+                        <img src="/images/galeri-4.jpg" class="h-[200px] w-full object-cover border-2 border-white"
+                            alt="galeri-4.jpg">
                     </a>
                 </div>
-                <div class="grid-item">
+                <div class="col-span-1">
                     <a href="/images/galeri-5.jpg" data-sub-html="<h4>Caption for image 5</h4>">
-                        <img src="/images/galeri-5.jpg" alt="galeri-5.jpg">
+                        <img src="/images/galeri-5.jpg" class="h-[200px] w-full object-cover border-2 border-white"
+                            alt="galeri-5.jpg">
                     </a>
                 </div>
-                <div class="grid-item">
+                <div class="col-span-1">
                     <a href="/images/galeri-6.jpg" data-sub-html="<h4>Caption for image 6</h4>">
-                        <img src="/images/galeri-6.jpg" alt="galeri-6.jpg">
+                        <img src="/images/galeri-6.jpg" class="h-[200px] w-full object-cover border-2 border-white"
+                            alt="galeri-6.jpg">
                     </a>
                 </div>
-                <div class="grid-item">
+                <div class="col-span-1">
                     <a href="/images/galeri-7.jpg" data-sub-html="<h4>Caption for image 7</h4>">
-                        <img src="/images/galeri-7.jpg" alt="galeri-7.jpg">
+                        <img src="/images/galeri-7.jpg" class="h-[200px] w-full object-cover border-2 border-white"
+                            alt="galeri-7.jpg">
                     </a>
                 </div>
-                <div class="grid-item">
+                <div class="col-span-1">
                     <a href="/images/galeri-8.jpg" data-sub-html="<h4>Caption for image 8</h4>">
-                        <img src="/images/galeri-8.jpg" alt="galeri-8.jpg">
+                        <img src="/images/galeri-8.jpg" class="h-[200px] w-full object-cover border-2 border-white"
+                            alt="galeri-8.jpg">
                     </a>
                 </div>
             </div>
@@ -354,17 +357,9 @@
     <script src="https://cdn.jsdelivr.net/npm/lightgallery.js/dist/js/lightgallery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/lightgallery.js/dist/js/lg-thumbnail.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/lightgallery.js/dist/js/lg-fullscreen.min.js"></script>
-    <script src="/js/masonry.pkgd.min.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
-            var elem = document.querySelector('.grid-masonry');
-            var msnry = new Masonry(elem, {
-                itemSelector: '.grid-item',
-                columnWidth: '.grid-item',
-                percentPosition: true
-            });
-
-            lightGallery(document.querySelector('.grid-masonry'), {
+            lightGallery(document.querySelector('.lightGallery'), {
                 selector: 'a',
                 thumbnail: true,
                 subHtmlSelectorRelative: true
@@ -377,8 +372,4 @@
     </script>
 </body>
 
-<<<<<<< HEAD
 </html>
-=======
-</html>
->>>>>>> 3ce54c9eff2e84be4d7a8edb55a3fc88610e4bdc
