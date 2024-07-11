@@ -4,7 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/images/logo-muhammadiyah.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/lightgallery.js/dist/css/lightgallery.min.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        * {
+            scroll-behavior: smooth;
+        }
+
+        .grid-item {
+            width: 300px;
+            border: 2px solid white;
+        }
+    </style>
 </head>
 
 <body>
@@ -18,15 +30,20 @@
                     </a>
                 </p>
                 <p>|</p>
-                <p>Email : pcmmarpoyandamai.official@gmail.com</p>
+                <p>
+                    Email :
+                    <a href="mailto:emde4md@gmail.com">
+                        emde4md@gmail.com
+                    </a>
+                </p>
             </div>
         </div>
     </div>
-    <nav class="bg-white py-4 sticky top-0">
+    <nav class="bg-white py-4 sticky top-0 border-b-4 border-green-500 z-10">
         <div class="container px-4 mx-auto">
             <div class="flex items-center justify-between">
                 <div class="flex items-center gap-4">
-                    <img src="images/logo-muhammadiyah.png" alt="logo-muhammadiyah.png" width="60" height="60">
+                    <img src="/images/logo-muhammadiyah.png" alt="logo-muhammadiyah.png" width="60" height="60">
                     <div class=" font-bold">
                         <p class="text-slate-900 text-sm">PIMPINAN CABANG MUHAMMADIYAH</p>
                         <p class="text-green-600 text-lg">MARPOYAN DAMAI</p>
@@ -38,19 +55,19 @@
                         <a href="#top">Beranda</a>
                     </li>
                     <li>
-                        <a href="#">Tentang</a>
+                        <a href="#tentang">Tentang</a>
                     </li>
                     <li>
-                        <a href="#">Berita</a>
+                        <a href="#berita">Berita</a>
                     </li>
                     <li>
-                        <a href="#">Struktur Organisasi</a>
+                        <a href="#struktur-organisasi">Struktur Organisasi</a>
                     </li>
                     <li>
-                        <a href="#">Galeri</a>
+                        <a href="#galeri">Galeri</a>
                     </li>
                     <li>
-                        <a href="#">Kontak Kami</a>
+                        <a href="#kontak">Kontak Kami</a>
                     </li>
                 </ul>
             </div>
@@ -58,7 +75,7 @@
     </nav>
     <main>
         <div class="h-[100vh] flex items-end justify-center text-center"
-            style="background: url('images/banner.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+            style="background: url('/images/banner.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;">
             <div class="text-4xl font-bold text-white pb-[100px]">
                 <h1>
                     Official Website
@@ -68,36 +85,79 @@
                 </h1>
             </div>
         </div>
-        <div id="berita" class="container px-4 mx-auto py-16">
+        <div class="container px-4 mx-auto py-16 scroll-mt-12" id="tentang">
+            <div class="flex gap-8">
+                <div class="flex-1">
+                    <img src="/images/tentang.jpg" alt="" class="rounded-xl object-cover">
+                </div>
+                <div class="flex-1">
+                    <h1 class="text-4xl text-slate-900 font-bold">Sambutan Ketua PCM Marpoyan Damai</h1>
+
+                    <div class="h-[1px] bg-gray-200 w-full my-6"></div>
+
+                    <div class="text-gray-500 leading-8 text-lg space-y-4">
+                        <p>
+                            Assalamu'alaikum wr.wb.
+                        </p>
+                        <p>
+                            Puji syukur kepada Allah Subhanahu Wa Ta'ala, yang telah memberikan rahmat dan anugerahNya
+                            sehingga website official Marpoyan Damai Kota ini dapat mengudara. Salah satu tujuan dari
+                            website ini adalah untuk menjawab
+                            akan
+                            setiap kebutuhan informasi
+                            dengan memanfaatkan sarana teknologi informasi yang ada.
+                        </p>
+                        <p>
+                            Semoga dengan adanya website ini dapat membantu dan bermanfaat, terutama informasi yang
+                            berhubungan dengan persyarikatan
+                            khususnya di area Batam Kota.
+                        </p>
+                        <p>
+                            Akhirnya kami mengharapkan masukan dari berbagai pihak untuk website ini agar kami terus
+                            belajar
+                            dan meng-update diri,
+                            sehingga tampilan, isi dan mutu website akan terus berkembang dan lebih baik nantinya.
+                            Terima
+                            kasih atas kerjasamanya,
+                            maju terus untuk mencapai cita-cita yang lebih baik lagi.
+                        </p>
+                        <p>
+                            Nasrun Minallah Wa Fathun Qoriib.
+                        </p>
+                        <p>Wassalamu'alaikum wr.wb.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="berita" class="container px-4 mx-auto py-16  scroll-mt-12">
             <h1 class="text-center text-4xl font-bold text-slate-900">Berita Persyarikatan</h1>
 
             <div class="grid grid-cols-3 gap-8 mt-8">
-                <div class="col-span-1 rounded-xl">
-                    <img src="images/berita-2.jpg" class="h-[225px] object-cover object-center w-full rounded-xl"
+                <div class="col-span-1 group rounded-xl overflow-hidden">
+                    <img src="/images/berita-1.jpg"
+                        class="h-[225px] object-cover object-center w-full rounded-xl group-hover:scale-110 transition duration-300"
                         alt="">
 
-                    <h3 class="font-bold text-yellow-400 text-2xl my-2">Kajian Spesial Dalam Rangka Memperingati Tahun
-                        Baru
-                        Islam 1446 Hijriyah </h3>
+                    <h3 class="font-bold text-yellow-400 text-2xl my-2">PCM dan PCA Marpoyan Damai Resmi Dikukuhkan</h3>
                     <p class="line-clamp-3 text-gray-500">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt
                         consectetur
                         quod officia, qui ullam iste. Odit eum ab voluptatibus mollitia sed doloribus tenetur accusamus
                         labore, corporis, rem, minus expedita dignissimos.</p>
                 </div>
-                <div class="col-span-1 rounded-xl">
-                    <img src="images/berita-2.jpg" class="h-[225px] object-cover object-center w-full rounded-xl"
+                <div class="col-span-1 group rounded-xl overflow-hidden">
+                    <img src="/images/berita-2.jpg"
+                        class="h-[225px] object-cover object-center w-full rounded-xl  group-hover:scale-110 transition duration-300"
                         alt="">
 
-                    <h3 class="font-bold text-yellow-400 text-2xl my-2">Kajian Spesial Dalam Rangka Memperingati Tahun
-                        Baru
-                        Islam 1446 Hijriyah </h3>
+                    <h3 class="font-bold text-yellow-400 text-2xl my-2">Serah Terima Kepala SK</h3>
                     <p class="line-clamp-3 text-gray-500">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt
                         consectetur
                         quod officia, qui ullam iste. Odit eum ab voluptatibus mollitia sed doloribus tenetur accusamus
                         labore, corporis, rem, minus expedita dignissimos.</p>
                 </div>
-                <div class="col-span-1 rounded-xl">
-                    <img src="images/berita-2.jpg" class="h-[225px] object-cover object-center w-full rounded-xl"
+                <div class="col-span-1 group rounded-xl overflow-hidden">
+                    <img src="/images/berita-2.jpg"
+                        class="h-[225px] object-cover object-center w-full rounded-xl  group-hover:scale-110 transition duration-300"
                         alt="">
 
                     <h3 class="font-bold text-yellow-400 text-2xl my-2">Kajian Spesial Dalam Rangka Memperingati Tahun
@@ -110,7 +170,164 @@
                 </div>
             </div>
         </div>
+        <div id="struktur-organisasi" class="container px-4 mx-auto py-16  scroll-mt-12">
+            <h1 class="text-center text-4xl font-bold text-slate-900">Struktur Organisasi</h1>
+            <p class="text-center text-xl text-gray-500 mb-8 mt-2">Periode 20xx - 20xx</p>
+            <div class="grid grid-cols-4 gap-6">
+                <div class="col-span-1">
+                    <div class="border border-gray-200 p-2 rounded-lg">
+                        <img src="/images/tentang.jpg" class="h-[300px] w-full object-center rounded-md" alt="">
+                    </div>
+
+                    <div class="text-center mt-4 text-slate-900">
+                        <p class="text-lg font-medium">Ketua</p>
+                        <p class="font-bold text-2xl">Muhammad Suaidi</p>
+                    </div>
+                </div>
+                <div class="col-span-1">
+                    <div class="border border-gray-200 p-2 rounded-lg">
+                        <img src="/images/tentang.jpg" class="h-[300px] w-full object-center rounded-md" alt="">
+                    </div>
+
+                    <div class="text-center mt-4 text-slate-900">
+                        <p class="text-lg font-medium">Sekretaris</p>
+                        <p class="font-bold text-2xl">Muhammad Suaidi</p>
+                    </div>
+                </div>
+                <div class="col-span-1">
+                    <div class="border border-gray-200 p-2 rounded-lg">
+                        <img src="/images/tentang.jpg" class="h-[300px] w-full object-center rounded-md" alt="">
+                    </div>
+
+                    <div class="text-center mt-4 text-slate-900">
+                        <p class="text-lg font-medium">Bendahara</p>
+                        <p class="font-bold text-2xl">Muhammad Suaidi</p>
+                    </div>
+                </div>
+                <div class="col-span-1">
+                    <div class="border border-gray-200 p-2 rounded-lg">
+                        <img src="/images/tentang.jpg" class="h-[300px] w-full object-center rounded-md" alt="">
+                    </div>
+
+                    <div class="text-center mt-4 text-slate-900">
+                        <p class="text-lg font-medium">Wakil Ketua</p>
+                        <p class="font-bold text-2xl">Muhammad Suaidi</p>
+                    </div>
+                </div>
+                <div class="col-span-1">
+                    <div class="border border-gray-200 p-2 rounded-lg">
+                        <img src="/images/tentang.jpg" class="h-[300px] w-full object-center rounded-md" alt="">
+                    </div>
+
+                    <div class="text-center mt-4 text-slate-900">
+                        <p class="text-lg font-medium">Wakil Ketua</p>
+                        <p class="font-bold text-2xl">Muhammad Suaidi</p>
+                    </div>
+                </div>
+                <div class="col-span-1">
+                    <div class="border border-gray-200 p-2 rounded-lg">
+                        <img src="/images/tentang.jpg" class="h-[300px] w-full object-center rounded-md" alt="">
+                    </div>
+
+                    <div class="text-center mt-4 text-slate-900">
+                        <p class="text-lg font-medium">Wakil Ketua</p>
+                        <p class="font-bold text-2xl">Muhammad Suaidi</p>
+                    </div>
+                </div>
+                <div class="col-span-1">
+                    <div class="border border-gray-200 p-2 rounded-lg">
+                        <img src="/images/tentang.jpg" class="h-[300px] w-full object-center rounded-md" alt="">
+                    </div>
+
+                    <div class="text-center mt-4 text-slate-900">
+                        <p class="text-lg font-medium">Wakil Ketua</p>
+                        <p class="font-bold text-2xl">Muhammad Suaidi</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="galeri" class="container px-4 mx-auto py-16 scroll-mt-12">
+            <h1 class="text-center text-4xl font-bold text-slate-900 mb-8">Galeri</h1>
+            <div class="grid-masonry">
+                <div class="grid-item">
+                    <a href="/images/galeri-1.jpg" data-sub-html="<h4>Caption for image 1</h4>">
+                        <img src="/images/galeri-1.jpg" alt="galeri-1.jpg">
+                    </a>
+                </div>
+                <div class="grid-item">
+                    <a href="/images/galeri-2.jpg" data-sub-html="<h4>Caption for image 2</h4>">
+                        <img src="/images/galeri-2.jpg" alt="galeri-2.jpg">
+                    </a>
+                </div>
+                <div class="grid-item">
+                    <a href="/images/galeri-3.jpg" data-sub-html="<h4>Caption for image 3</h4>">
+                        <img src="/images/galeri-3.jpg" alt="galeri-3.jpg">
+                    </a>
+                </div>
+                <div class="grid-item">
+                    <a href="/images/galeri-4.jpg" data-sub-html="<h4>Caption for image 4</h4>">
+                        <img src="/images/galeri-4.jpg" alt="galeri-4.jpg">
+                    </a>
+                </div>
+                <div class="grid-item">
+                    <a href="/images/galeri-5.jpg" data-sub-html="<h4>Caption for image 5</h4>">
+                        <img src="/images/galeri-5.jpg" alt="galeri-5.jpg">
+                    </a>
+                </div>
+                <div class="grid-item">
+                    <a href="/images/galeri-6.jpg" data-sub-html="<h4>Caption for image 6</h4>">
+                        <img src="/images/galeri-6.jpg" alt="galeri-6.jpg">
+                    </a>
+                </div>
+                <div class="grid-item">
+                    <a href="/images/galeri-7.jpg" data-sub-html="<h4>Caption for image 7</h4>">
+                        <img src="/images/galeri-7.jpg" alt="galeri-7.jpg">
+                    </a>
+                </div>
+                <div class="grid-item">
+                    <a href="/images/galeri-8.jpg" data-sub-html="<h4>Caption for image 8</h4>">
+                        <img src="/images/galeri-8.jpg" alt="galeri-8.jpg">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="kontak" class="container px-4 mx-auto py-16  scroll-mt-12">
+            <h1 class="text-center text-4xl font-bold text-slate-900 mb-8">Kontak Kami</h1>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.670039538672!2d101.43642249999999!3d0.49397490000000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d5aecb0610d3c1%3A0xf13ab32f409318de!2sMasjid%20Nurul%20Yaqin%20Muhammadiyah!5e0!3m2!1sid!2sid!4v1720678687896!5m2!1sid!2sid"
+                class="w-full h-[500px] rounded-xl" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
     </main>
+
+    <footer class="bg-slate-900 py-4">
+        <div class="container px-4 mx-auto">
+            <p class="text-center text-white">
+                Copyright ©2024 Pimpinan Cabang Muhammadiyah Marpoyan Damai
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery.js/dist/js/lightgallery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery.js/dist/js/lg-thumbnail.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery.js/dist/js/lg-fullscreen.min.js"></script>
+    <script src="/js/masonry.pkgd.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elem = document.querySelector('.grid-masonry');
+            var msnry = new Masonry(elem, {
+                itemSelector: '.grid-item',
+                columnWidth: '.grid-item',
+                percentPosition: true
+            });
+
+            lightGallery(document.querySelector('.grid-masonry'), {
+                selector: 'a',
+                thumbnail: true,
+                subHtmlSelectorRelative: true
+            });
+        });
+    </script>
 </body>
 
 </html>
