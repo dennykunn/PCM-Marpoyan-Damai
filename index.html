@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!doctype html>
 <html>
 
@@ -45,13 +44,24 @@
             <div class="flex items-center justify-between">
                 <div class="flex items-center gap-4">
                     <img src="/images/logo-muhammadiyah.png" alt="logo-muhammadiyah.png" width="60" height="60">
-                    <div class=" font-bold">
+                    <div class="font-bold">
                         <p class="text-slate-900 text-sm">PIMPINAN CABANG MUHAMMADIYAH</p>
                         <p class="text-green-600 text-lg">MARPOYAN DAMAI</p>
                     </div>
                 </div>
 
-                <ul class="flex items-center gap-8 text-slate-900 font-bold">
+                <div class="lg:hidden">
+                    <button id="menu-toggle" class="text-slate-900 focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>
+                </div>
+
+                <ul id="menu"
+                    class="hidden lg:flex items-center gap-8 text-slate-900 font-bold lg:relative lg:top-0 lg:left-0 lg:border-none lg:space-y-0 lg:w-auto absolute top-20 left-0 bg-white p-4 w-full border-b-4 border-green-500 text-center space-y-4">
                     <li>
                         <a href="#top">Beranda</a>
                     </li>
@@ -74,10 +84,12 @@
             </div>
         </div>
     </nav>
+
+
     <main>
         <div class="h-[100vh] flex items-end justify-center text-center"
             style="background: url('/images/banner.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;">
-            <div class="text-4xl font-bold text-white pb-[100px]">
+            <div class="md:text-4xl text-3xl font-bold text-white pb-[100px]">
                 <h1>
                     Official Website
                 </h1>
@@ -86,17 +98,18 @@
                 </h1>
             </div>
         </div>
-        <div class="container px-4 mx-auto py-16 scroll-mt-12" id="tentang">
-            <div class="flex gap-8">
-                <div class="flex-1">
-                    <img src="/images/tentang.jpg" alt="" class="rounded-xl object-cover">
+        <div class="container px-4 mx-auto md:py-16 py-8 scroll-mt-12" id="tentang">
+            <div class="md:flex gap-8">
+                <div class="lg:flex-1 md:flex-shrink-0 md:w-[300px]">
+                    <img src="/images/tentang.jpg" alt=""
+                        class="rounded-xl object-cover md:h-auto h-[300px] w-full object-cover object-top">
                 </div>
-                <div class="flex-1">
-                    <h1 class="text-4xl text-slate-900 font-bold">Sambutan Ketua PCM Marpoyan Damai</h1>
+                <div class="flex-1 md:mt-0 mt-6">
+                    <h1 class="lg:text-4xl text-2xl text-slate-900 font-bold">Sambutan Ketua PCM Marpoyan Damai</h1>
 
-                    <div class="h-[1px] bg-gray-200 w-full my-6"></div>
+                    <div class="h-[1px] bg-gray-200 w-full md:my-6 my-3"></div>
 
-                    <div class="text-gray-500 leading-8 text-lg space-y-4">
+                    <div class="text-gray-500 leading-8 md:text-lg md:space-y-4 space-y-2">
                         <p>
                             Assalamu'alaikum wr.wb.
                         </p>
@@ -130,10 +143,10 @@
                 </div>
             </div>
         </div>
-        <div id="berita" class="container px-4 mx-auto py-16  scroll-mt-12">
-            <h1 class="text-center text-4xl font-bold text-slate-900">Berita Persyarikatan</h1>
+        <div id="berita" class="container px-4 mx-auto md:py-16 py-8  scroll-mt-12">
+            <h1 class="text-center lg:text-4xl text-2xl font-bold text-slate-900">Berita Persyarikatan</h1>
 
-            <div class="grid grid-cols-3 gap-8 mt-8">
+            <div class="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-8 mt-8">
                 <div class="col-span-1 group rounded-xl overflow-hidden">
                     <img src="/images/berita-1.jpg"
                         class="h-[225px] object-cover object-center w-full rounded-xl group-hover:scale-110 transition duration-300"
@@ -171,84 +184,113 @@
                 </div>
             </div>
         </div>
-        <div id="struktur-organisasi" class="container px-4 mx-auto py-16  scroll-mt-12">
-            <h1 class="text-center text-4xl font-bold text-slate-900">Struktur Organisasi</h1>
-            <p class="text-center text-xl text-gray-500 mb-8 mt-2">Periode 20xx - 20xx</p>
-            <div class="grid grid-cols-4 gap-6">
+        <div id="struktur-organisasi" class="container px-4 mx-auto md:py-16 py-8  scroll-mt-12">
+            <h1 class="text-center lg:text-4xl text-2xl font-bold text-slate-900">Struktur Organisasi</h1>
+            <p class="text-center md:text-xl text-gray-500 mb-8 mt-2">Periode 2022 - 2027</p>
+            <div class="grid lg:grid-cols-4 sm:grid-cols-3 xs:grid-cols-2 grid-cols-1 gap-6">
                 <div class="col-span-1">
                     <div class="border border-gray-200 p-2 rounded-lg">
-                        <img src="/images/tentang.jpg" class="h-[300px] w-full object-center rounded-md" alt="">
+                        <img src="/images/tentang.jpg" class="h-[300px] w-full object-cover object-top rounded-md"
+                            alt="">
                     </div>
 
                     <div class="text-center mt-4 text-slate-900">
                         <p class="text-lg font-medium">Ketua</p>
-                        <p class="font-bold text-2xl">Muhammad Suaidi</p>
+                        <p class="font-bold text-2xl">Muhammad Suaidi, SHI</p>
                     </div>
                 </div>
                 <div class="col-span-1">
                     <div class="border border-gray-200 p-2 rounded-lg">
-                        <img src="/images/tentang.jpg" class="h-[300px] w-full object-center rounded-md" alt="">
+                        <img src="/images/tentang.jpg" class="h-[300px] w-full  object-cover object-top rounded-md"
+                            alt="">
                     </div>
 
                     <div class="text-center mt-4 text-slate-900">
                         <p class="text-lg font-medium">Sekretaris</p>
-                        <p class="font-bold text-2xl">Muhammad Suaidi</p>
+                        <p class="font-bold text-2xl">Jasman Chan, SE, MSi</p>
                     </div>
                 </div>
                 <div class="col-span-1">
                     <div class="border border-gray-200 p-2 rounded-lg">
-                        <img src="/images/tentang.jpg" class="h-[300px] w-full object-center rounded-md" alt="">
+                        <img src="/images/tentang.jpg" class="h-[300px] w-full  object-cover object-top rounded-md"
+                            alt="">
                     </div>
 
                     <div class="text-center mt-4 text-slate-900">
                         <p class="text-lg font-medium">Bendahara</p>
-                        <p class="font-bold text-2xl">Muhammad Suaidi</p>
+                        <p class="font-bold text-2xl">H. Zulkifli Harun</p>
                     </div>
                 </div>
                 <div class="col-span-1">
                     <div class="border border-gray-200 p-2 rounded-lg">
-                        <img src="/images/tentang.jpg" class="h-[300px] w-full object-center rounded-md" alt="">
+                        <img src="/images/tentang.jpg" class="h-[300px] w-full  object-cover object-top rounded-md"
+                            alt="">
                     </div>
 
                     <div class="text-center mt-4 text-slate-900">
                         <p class="text-lg font-medium">Wakil Ketua</p>
-                        <p class="font-bold text-2xl">Muhammad Suaidi</p>
+                        <p class="font-bold text-2xl">Drs. H. Darwis Idris</p>
                     </div>
                 </div>
                 <div class="col-span-1">
                     <div class="border border-gray-200 p-2 rounded-lg">
-                        <img src="/images/tentang.jpg" class="h-[300px] w-full object-center rounded-md" alt="">
+                        <img src="/images/tentang.jpg" class="h-[300px] w-full  object-cover object-top rounded-md"
+                            alt="">
                     </div>
 
                     <div class="text-center mt-4 text-slate-900">
                         <p class="text-lg font-medium">Wakil Ketua</p>
-                        <p class="font-bold text-2xl">Muhammad Suaidi</p>
+                        <p class="font-bold text-2xl">H. Sutan Sjahrir</p>
                     </div>
                 </div>
                 <div class="col-span-1">
                     <div class="border border-gray-200 p-2 rounded-lg">
-                        <img src="/images/tentang.jpg" class="h-[300px] w-full object-center rounded-md" alt="">
+                        <img src="/images/tentang.jpg" class="h-[300px] w-full  object-cover object-top rounded-md"
+                            alt="">
                     </div>
 
                     <div class="text-center mt-4 text-slate-900">
                         <p class="text-lg font-medium">Wakil Ketua</p>
-                        <p class="font-bold text-2xl">Muhammad Suaidi</p>
+                        <p class="font-bold text-2xl">Amril Surin</p>
                     </div>
                 </div>
                 <div class="col-span-1">
                     <div class="border border-gray-200 p-2 rounded-lg">
-                        <img src="/images/tentang.jpg" class="h-[300px] w-full object-center rounded-md" alt="">
+                        <img src="/images/tentang.jpg" class="h-[300px] w-full  object-cover object-top rounded-md"
+                            alt="">
                     </div>
 
                     <div class="text-center mt-4 text-slate-900">
                         <p class="text-lg font-medium">Wakil Ketua</p>
-                        <p class="font-bold text-2xl">Muhammad Suaidi</p>
+                        <p class="font-bold text-2xl">M. Faisal, S.Pd</p>
+                    </div>
+                </div>
+                <div class="col-span-1">
+                    <div class="border border-gray-200 p-2 rounded-lg">
+                        <img src="/images/tentang.jpg" class="h-[300px] w-full  object-cover object-top rounded-md"
+                            alt="">
+                    </div>
+
+                    <div class="text-center mt-4 text-slate-900">
+                        <p class="text-lg font-medium">Wakil Sekretaris</p>
+                        <p class="font-bold text-2xl">Amsal Siregar, MPd</p>
+                    </div>
+                </div>
+                <div class="col-span-1">
+                    <div class="border border-gray-200 p-2 rounded-lg">
+                        <img src="/images/tentang.jpg" class="h-[300px] w-full  object-cover object-top rounded-md"
+                            alt="">
+                    </div>
+
+                    <div class="text-center mt-4 text-slate-900">
+                        <p class="text-lg font-medium">Wakil Sekretaris</p>
+                        <p class="font-bold text-2xl">Amsal Siregar, MPd</p>
                     </div>
                 </div>
             </div>
         </div>
-        <div id="galeri" class="container px-4 mx-auto py-16 scroll-mt-12">
-            <h1 class="text-center text-4xl font-bold text-slate-900 mb-8">Galeri</h1>
+        <div id="galeri" class="container px-4 mx-auto md:py-16 py-8 scroll-mt-12">
+            <h1 class="text-center lg:text-4xl text-2xl font-bold text-slate-900 mb-8">Galeri</h1>
             <div class="grid-masonry">
                 <div class="grid-item">
                     <a href="/images/galeri-1.jpg" data-sub-html="<h4>Caption for image 1</h4>">
@@ -292,11 +334,11 @@
                 </div>
             </div>
         </div>
-        <div id="kontak" class="container px-4 mx-auto py-16  scroll-mt-12">
-            <h1 class="text-center text-4xl font-bold text-slate-900 mb-8">Kontak Kami</h1>
+        <div id="kontak" class="container px-4 mx-auto md:py-16 py-8  scroll-mt-12">
+            <h1 class="text-center lg:text-4xl text-2xl font-bold text-slate-900 mb-8">Kontak Kami</h1>
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.670039538672!2d101.43642249999999!3d0.49397490000000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d5aecb0610d3c1%3A0xf13ab32f409318de!2sMasjid%20Nurul%20Yaqin%20Muhammadiyah!5e0!3m2!1sid!2sid!4v1720678687896!5m2!1sid!2sid"
-                class="w-full h-[500px] rounded-xl" style="border:0;" allowfullscreen="" loading="lazy"
+                class="w-full md:h-[500px] h-[300px] rounded-xl" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </main>
@@ -328,124 +370,11 @@
                 subHtmlSelectorRelative: true
             });
         });
+
+        document.getElementById('menu-toggle').addEventListener('click', function () {
+            document.getElementById('menu').classList.toggle('hidden');
+        });
     </script>
 </body>
 
-=======
-<!doctype html>
-<html>
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
-</head>
-
-<body>
-    <div id="top" class="bg-slate-900 py-3">
-        <div class="container px-4 mx-auto">
-            <div class="flex items-center text-white gap-4 text-sm">
-                <p>
-                    Call :
-                    <a href="https://wa.me/+6285265957997" target="_blank" rel="noopener noreferrer">
-                        +62 852 6595 7997
-                    </a>
-                </p>
-                <p>|</p>
-                <p>Email : pcmmarpoyandamai.official@gmail.com</p>
-            </div>
-        </div>
-    </div>
-    <nav class="bg-white py-4 sticky top-0">
-        <div class="container px-4 mx-auto">
-            <div class="flex items-center justify-between">
-                <div class="flex items-center gap-4">
-                    <img src="images/logo-muhammadiyah.png" alt="logo-muhammadiyah.png" width="60" height="60">
-                    <div class=" font-bold">
-                        <p class="text-slate-900 text-sm">PIMPINAN CABANG MUHAMMADIYAH</p>
-                        <p class="text-green-600 text-lg">MARPOYAN DAMAI</p>
-                    </div>
-                </div>
-
-                <ul class="flex items-center gap-8 text-slate-900 font-bold">
-                    <li>
-                        <a href="#top">Beranda</a>
-                    </li>
-                    <li>
-                        <a href="#">Tentang</a>
-                    </li>
-                    <li>
-                        <a href="#">Berita</a>
-                    </li>
-                    <li>
-                        <a href="#">Struktur Organisasi</a>
-                    </li>
-                    <li>
-                        <a href="#">Galeri</a>
-                    </li>
-                    <li>
-                        <a href="#">Kontak Kami</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <main>
-        <div class="h-[100vh] flex items-end justify-center text-center"
-            style="background: url('images/banner.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;">
-            <div class="text-4xl font-bold text-white pb-[100px]">
-                <h1>
-                    Official Website
-                </h1>
-                <h1>
-                    Pimpinan Cabang Muhammadiyah Marpoyan Damai
-                </h1>
-            </div>
-        </div>
-        <div id="berita" class="container px-4 mx-auto py-16">
-            <h1 class="text-center text-4xl font-bold text-slate-900">Berita Persyarikatan</h1>
-
-            <div class="grid grid-cols-3 gap-8 mt-8">
-                <div class="col-span-1 rounded-xl">
-                    <img src="images/berita-2.jpg" class="h-[225px] object-cover object-center w-full rounded-xl"
-                        alt="">
-
-                    <h3 class="font-bold text-yellow-400 text-2xl my-2">Kajian Spesial Dalam Rangka Memperingati Tahun
-                        Baru
-                        Islam 1446 Hijriyah </h3>
-                    <p class="line-clamp-3 text-gray-500">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt
-                        consectetur
-                        quod officia, qui ullam iste. Odit eum ab voluptatibus mollitia sed doloribus tenetur accusamus
-                        labore, corporis, rem, minus expedita dignissimos.</p>
-                </div>
-                <div class="col-span-1 rounded-xl">
-                    <img src="images/berita-2.jpg" class="h-[225px] object-cover object-center w-full rounded-xl"
-                        alt="">
-
-                    <h3 class="font-bold text-yellow-400 text-2xl my-2">Kajian Spesial Dalam Rangka Memperingati Tahun
-                        Baru
-                        Islam 1446 Hijriyah </h3>
-                    <p class="line-clamp-3 text-gray-500">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt
-                        consectetur
-                        quod officia, qui ullam iste. Odit eum ab voluptatibus mollitia sed doloribus tenetur accusamus
-                        labore, corporis, rem, minus expedita dignissimos.</p>
-                </div>
-                <div class="col-span-1 rounded-xl">
-                    <img src="images/berita-2.jpg" class="h-[225px] object-cover object-center w-full rounded-xl"
-                        alt="">
-
-                    <h3 class="font-bold text-yellow-400 text-2xl my-2">Kajian Spesial Dalam Rangka Memperingati Tahun
-                        Baru
-                        Islam 1446 Hijriyah </h3>
-                    <p class="line-clamp-3 text-gray-500">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt
-                        consectetur
-                        quod officia, qui ullam iste. Odit eum ab voluptatibus mollitia sed doloribus tenetur accusamus
-                        labore, corporis, rem, minus expedita dignissimos.</p>
-                </div>
-            </div>
-        </div>
-    </main>
-</body>
-
->>>>>>> 33f4fa34c04acc25aa0e32059a30e54c8cc63b20
 </html>
